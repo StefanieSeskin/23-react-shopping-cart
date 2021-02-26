@@ -1,11 +1,20 @@
 /* See comments about CSS I didn't get to work.  Don't want 
 to get stuck.  I used li tags and not divs and so things don't
-work as they could. Could not keep up with styling in l
-lecture and this is not a priority. */
+work.  I am really struggling with CSS because there are too many
+files and I'm just confused and even though Thomas keeps saying "focus
+on one thing", it isn't happening for me, especially when I have been
+trying to work on one thing and then in class, we are already going 
+over a new thing.  */
+*  
+    { 
+    margin: 0; 
+    padding: 0; 
+    border: 0; 
+}
 
 img {
+    width: 75%;
     height: auto;
-    width: 70%;
     margin-bottom: 20px;
 }
 

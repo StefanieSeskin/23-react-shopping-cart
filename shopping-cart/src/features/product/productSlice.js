@@ -28,6 +28,7 @@ export const productSlice = createSlice({
     addToCart: (state, action) => {
       console.log(action)
         state.cart.push(action.payload)
+        
     }
   },
 });

@@ -37,7 +37,7 @@ function setInstallment(a, b) {
         <button onClick={() => dispatch(increment())}>Sup</button> */}
         <div className="productCard">
             <ul>{products.map(product => <p key={product.id}>
-            <li><img src={product.img.normal}></img></li>
+            <li><img className="cardPhoto" src={product.img.normal}></img></li>
                 <li className="productTitle">{product.title}</li>
                 <li className="dash"><small>this is a dash</small></li>
                 <li className="productPrice"><small>$</small> {product.price.toFixed(2)}</li>

@@ -1,3 +1,18 @@
+/* I don't understand how the css modules work and therefore am having
+a hard time styling all these different files and it is frustrating
+me way too much to continue. */
+/* 
+img {
+    height: 40%;
+    width: auto;
+  } */
+  *  
+  { 
+  margin: 0; 
+  padding: 0; 
+  border: 0; 
+}
+
 .sidenav {
     height: 100%; /* 100% Full-height */
     width: 450px; /* 0 width - change this with JavaScript */
@@ -5,10 +20,12 @@
     z-index: 1; /* Stay on top */
     top: 0; /* Stay at the top */
     right: 0;
+    font-size: 15px;
     color: #fff;
     background-color: #111; /* Black*/
     overflow-x: hidden; /* Disable horizontal scroll */
     padding-top: 60px; /* Place content 60px from the top */
+    padding-left: 25px;
     transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
   }
   
@@ -23,9 +40,9 @@
   }
   
   /* When you mouse over the navigation links, change their color */
-  .sidenav a:hover {
+  /* .sidenav a:hover {
     color: #f1f1f1;
-  }
+  } */
   
   /* Position and style the close button (top right corner) */
   .sidenav .closebtn {

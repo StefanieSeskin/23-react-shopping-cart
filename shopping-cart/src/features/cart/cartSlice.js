@@ -1,5 +1,5 @@
 import { Counter } from '../counter/Counter';
-import './App.css';
+// import './App.css';
 
 function Increase_Quantity() {
     return (

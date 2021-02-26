@@ -2,6 +2,7 @@
 import { configureStore } from '@reduxjs/toolkit';
 import counterReducer from '../features/counter/counterSlice';
 import productReducer from '../features/product/productSlice';
+import logger from 'redux-logger'
 
 export default configureStore({
   reducer: {
@@ -19,4 +20,5 @@ export default configureStore({
     //just like in last homework.  Asynchonous
     //
   },
+  middleware: (getDefaultMiddleware) => getDefaultMiddleware().concat(logger)
 });
