@@ -1,4 +1,4 @@
-import { Counter } from './features/counter/Counter';
+import { Counter } from '../counter/Counter';
 import './App.css';
 
 function Increase_Quantity() {

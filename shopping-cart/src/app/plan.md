@@ -1,13 +1,14 @@
 
 CARTS FEATURE
-Cart - adds to cart, moves from cart (actions)
+Products feature -- gets products adds to array
+Cart - adds to cart, moves from cart
 
-PRODUCTS FEATURE - get products
+PRODUCTS FEATURE
 
 
 COMPONENTS:
 
-1.  PRODUCT CARD COMPONENT = T_SHIRTS - get list of products
+1.  PRODUCT CARD COMPONENT = T_SHIRTS
     OBJECT - product
         --free shipping in black box--
         image (onClick ADD_TO_CART)
@@ -17,6 +18,14 @@ COMPONENTS:
         installments
         Black button says "Add to cart" with onClick and hover color yellow
 
+
+ADD_TO_CART
+REMOVE_FROM_CART
+INSTALLMENTS
+T_SHIRTS (id) - Object
+T_TITLE
+THUMBNAIL
+STYLE
 CART 
 CART_ITEM
 

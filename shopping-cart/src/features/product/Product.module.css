@@ -1,6 +1,12 @@
+/* See comments about CSS I didn't get to work.  Don't want 
+to get stuck.  I used li tags and not divs and so things don't
+work as they could. Could not keep up with styling in l
+lecture and this is not a priority. */
+
 img {
     height: auto;
     width: 70%;
+    margin-bottom: 20px;
 }
 
 ul {
@@ -27,9 +33,11 @@ ul {
 
 }   
 
-ul  {
+li .productPrice {
     color: gray;
 }
+
+/* this text color isn't changing  */
 
 button {
     background-color:black;
@@ -41,9 +49,10 @@ button {
     display: inline-block;
     font-size: 16px;
     transition-duration: 0.4s;  
-    width: 200px;
+    width: 80%;
     border: none;
     outline:none;
+    margin: 25px;
   }
   
 button:hover {

@@ -1,15 +1,11 @@
-// Stefanie notes:  This is so tedious to me, especially because it takes
-//me so long to do anything.  
-//FYI -- I spent all of lab on Wednesday trying to help Candice the
-//way Thomas helped me.  She was grateful but her code didn't work.
-
 import { createSlice } from '@reduxjs/toolkit';
 // import { useDetector, useDispatch} from redux - what?
 export const productSlice = createSlice({
   name: 'product',
   initialState: {
     value: 0,
-    products: []
+    products: [],
+    cart: []
   },
   reducers: {
     increment: state => {
@@ -28,12 +24,15 @@ export const productSlice = createSlice({
     setProducts: (state, action) => {
         // console.log(action.payload)
         state.products = action.payload
-        
+    },
+    addToCart: (state, action) => {
+      console.log(action)
+        state.cart.push(action.payload)
     }
   },
 });
 
-export const { increment, decrement, incrementByAmount, setProducts } = productSlice.actions;
+export const { increment, decrement, incrementByAmount, setProducts, addToCart } = productSlice.actions;
 
 // The function below is called a thunk and allows us to perform async logic. It
 // can be dispatched like a regular action: `dispatch(incrementAsync(10))`. This
@@ -50,7 +49,10 @@ export const fetchProducts = () => dispatch => {
     .then(r => r.json())
     .then(myProducts => {
         // console.log(myProducts)
-        dispatch(setProducts(myProducts))
+        // setTimeout(() => {
+          // console.log(setProducts(myProducts))
+          dispatch(setProducts(myProducts))
+        // }, 5000)
     })
 }
 
@@ -64,7 +66,12 @@ export const selectCount = function (state) {
 }
 
 export const selectProducts = function(state) {
+  console.log(state)
     return state.product.products
+}
+
+export const selectCart = function(state) {
+  return state.product.cart
 }
 
 export default productSlice.reducer;
